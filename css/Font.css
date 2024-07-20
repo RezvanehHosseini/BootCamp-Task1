@@ -1,0 +1,12 @@
+@font-face {
+    font-family:'Vazir-Bold' ;
+    src: url('/assest/Font/Vazir-Bold-FD-WOL.woff') format('woff');
+}
+@font-face {
+    font-family:'Vazir-Light' ;
+    src: url('/assest/Font/Vazir-Light-FD-WOL.ttf') format('truetype');
+}
+@font-face {
+    font-family:'Vazir-Medium' ;
+    src: url('/assest/Font/Vazir-Medium-FD-WOL.woff') format('woff');
+}
