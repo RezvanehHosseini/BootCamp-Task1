@@ -1,0 +1,312 @@
+:root{
+    --ff-title:Vazir-Bold ;
+    --ff-date:Vazir-Medium ;
+    --ff-name:Vazir-Light;
+    --ff-button:Vazir-Bold;
+    --textcolor-button: #FFFFFF;
+    --textcolor-upload: #234894;
+    --bakcolor--button: hsl(27, 100%, 50%);
+    --numbercolor-button: #AFCEDD;
+    --color-button:#219F95;
+    --color-date: #696969;
+    --border-redius-img-num:6px;
+    --border-redius-btn:8px;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+width: 100%;
+height: 100%;
+
+display: grid;
+grid-template-columns: 1fr;
+justify-items: center;
+  margin: 0 50px;
+
+}
+.main{
+   
+   
+
+  }
+  
+
+.container__title{
+    font-family: var(--ff-title);
+    font-size: 12px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container__title__text{
+    text-align: center;
+    padding-top: 50px;
+
+}
+.row{
+    /* ---flex------ */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: 85vw; */
+    /* padding-right: 80; */
+    /* margin-top: 0; */
+    /* ************************************************ */
+   /* ------grid----- */
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   align-items: center;
+   justify-items: center;
+   row-gap: 20px;
+   margin-right: 10px;
+   margin-left: 70px;
+   
+   
+
+}
+.section1{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 90vw;
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* width:100%; */
+    /* height: 50% !important; */
+   /* margin-top: 10px; */
+
+/* ----------------------grid------------ */
+      display: grid;
+      width: 400px;
+      height: 200px;
+      margin: 5px 10px;
+
+/* justify-items: center; */
+}
+
+
+/* ----media-query-------------------------------------------- */
+
+@media screen and (min-width :567px) {
+    .container{
+        width: 50%;
+        height: 50%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        /* margin-right: 50px;  */
+        /* margin-left: 50px; */
+    }
+    .container__title{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        justify-items: right;
+        align-items:center;
+        /* justify-content: right;      */
+        /* width: 90%;    */
+    }
+   
+
+    .row{
+        width: 100%;
+        height: 100%;
+        
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    column-gap: 3px;
+    margin-right: 0;
+    margin-left: 50px;
+}
+
+
+}
+@media screen and (min-width :768px) {
+    .container{
+       /* width: 100vw; */
+       height: 100%;
+       width:50%;
+       display: grid;
+       justify-items: center;
+       align-items: center;
+/* margin:0 300px; */
+  }
+    
+    
+    
+    
+
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        column-gap: 2px;
+        row-gap:2px;
+
+    }
+    }
+
+    @media screen and (min-width :1800px)
+    {
+        .container{
+            /* width: 100vw; */
+            height: 100%;
+            width:30%;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        margin:0 300px; 
+          }
+    }
+/* ----end-mediaquery-------------------------------------------- */
+
+
+.section1__head{
+    
+    font-family: var(--ff-button);
+    /* display:flex; */
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr;
+    width: 400px;
+    height: 200px;
+    height: 55px;
+    padding: 10px;
+}
+.section1__head__number{
+
+    font-size: 18px;
+    text-align: center;
+   background-color: var(--numbercolor-button);
+    width: 40px;
+    height: 40px;
+    border-radius: var(--border-redius-img-num) ;
+    
+    padding-top:5px
+}
+.section1__head__upload{
+    line-height: 24px;
+    font-size: 16px;
+    padding-top: 10px;
+    /* padding-right: 4px; */
+
+    text-align: right;
+
+    color:var(--textcolor-upload);
+}
+.section1__head__date{
+    color: var(--color-date);
+    font-family: var(--ff-date);
+    font-size: 12px;
+    margin: 7px 10px;
+    /* padding-left: 0; */
+    padding-top: 5px;
+    text-align: left;
+
+   
+   
+}
+/* section main */
+
+.section-main{
+    line-height: 27px;
+    /* margin:  10px; */
+    padding-right:10px ;
+    padding-top: 5px;
+  width: 50%;
+
+}
+.section-main__title{
+    font-family: var(--ff-title);
+    font-size: 20px;
+    padding-right: 5px;
+
+}
+.section-main__subt{
+    font-family: var(--ff-date);
+    color: var(--color-date);
+    line-height: 18px;
+    font-size: 12px;
+    padding-right: 5px;
+    padding-bottom:10px ;
+    padding-top: 10px;
+
+
+}
+
+/* section footer */
+.section-footer{
+    display: grid;
+ grid-template-columns: 0.5fr 1fr 2fr;
+    margin: 5px 10px;
+width: 100%; 
+height:50%;
+    
+}
+.section-footer__image{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
+.section-footer__img{
+    width: 40px;
+    height: 40px;
+    border-radius:var(--border-redius-img-num) ;
+    /* padding-top: 20px; */
+margin:5px 5px;    
+
+}
+.section-footer__name{
+    font-family: var(--ff-name);
+       padding-top: 8px;
+       line-height: 24px;
+    font-size: 16px;
+    padding-top: 20px;
+    /* margin-right: 2px; */
+    /* margin-top: 10px; */
+    /* margin-bottom: 2px; */
+
+}
+.section-footer__btn1{
+
+    font-family: var(--ff-button);
+    background-color: var(--color-button);
+    border-radius:var(--border-redius-btn) ;
+    width: 150px;
+    height: 64px;
+    border:none;
+    outline: none;
+    margin-right: 55px;
+    margin-left:10px;
+    margin-bottom: 20px;
+    /* transform: translate(20px,10px); */
+
+}
+.section-footer__btn1__link{
+     text-decoration: none;
+    font-size: 16px;
+    color: var(--textcolor-button);
+    padding: 10px;
+    transition: 0.3s;
+
+}
+.section-footer__btn1:hover{
+    background-color: var(--bakcolor--button);
+    cursor: pointer;
+    transform: scale(1.02)
+
+
+}
+.section-footer__btn1__link:hover{
+    color:var(--textcolor-upload);
+}
